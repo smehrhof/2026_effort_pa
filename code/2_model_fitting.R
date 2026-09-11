@@ -28,7 +28,7 @@ librarian::shelf(
 )
 
 # source datasets
-data <- readRDS("data/processed_data/cleaned_data.RDS")
+data <- readRDS("data/cleaned_data.RDS")
 
 # should the modelling be run from scratch or should saved model fits be loaded?
 run_modelling <- FALSE 
@@ -237,7 +237,7 @@ combined_data <- data$demographic_data %>%
 # save combined dataset
 
 saveRDS(combined_data, 
-        here::here("data/processed_data/combined_data.RDS"))
+        here::here("data/combined_data.RDS"))
 
 
 

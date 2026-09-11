@@ -21,8 +21,8 @@ librarian::shelf(
 )
 
 # source datasets
-data <- readRDS("data/processed_data/cleaned_data.RDS")
-data_excl <- readRDS("data/processed_data/excluded_data.RDS")
+data <- readRDS("data/cleaned_data.RDS")
+data_excl <- readRDS("data/excluded_data.RDS")
 
 
 ### (1) Demographics -----------------------------------------------
