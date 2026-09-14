@@ -14,7 +14,7 @@ make_forest_data <- function(
   
   purrr::imap_dfr(
     models,
-    ~ broom::tidy(
+    ~ broom.mixed::tidy(
       .x,
       conf.int = TRUE
     ) %>%
@@ -27,7 +27,6 @@ make_forest_data <- function(
         !!!labels
       ),
       
-      # Use model name as predictor if requested
       predictor = if (!is.null(predictor_name)) {
         model
       } else {
@@ -58,7 +57,6 @@ make_forest_data <- function(
       )
     )
 }
-
 
 # 2. Make forest plot -----------------------------------------
 

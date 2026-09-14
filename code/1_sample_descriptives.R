@@ -503,7 +503,8 @@ covariate_plot <- ggplot(forest_data,
 
 # Arrange all plots
 
-line_1 <- (total_MET_plot | covariate_plot | participation_plot)
+line_1 <- (total_MET_plot | covariate_plot | participation_plot) +
+  plot_layout(widths = c(1.5, 1, 1))
 
 line_2 <- (walking_MET_plot | moderate_MET_plot | vigorous_MET_plot | sitting_MET_plot)
 

@@ -19,7 +19,7 @@ librarian::shelf(ggplot2, ggpubr, tidyverse, dplyr, stringr, purrr, here, janito
                  patchwork, emmeans, glmmTMB)
 
 # load data
-combined_data <- readRDS(here::here("data/processed_data/combined_data.RDS"))
+combined_data <- readRDS(here::here("data/combined_data.RDS"))
 
 # Source helper functions
 source("code/functions/plotting_funs.R")
